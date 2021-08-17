@@ -68,4 +68,13 @@ public class UserController {
         logger.info("[currentUser]");
         return new UserVO(10, UUID.randomUUID().toString());
     }
+
+    /**
+     * 测试第三个拦截器 它在postHandler抛出了异常
+     */
+    @GetMapping("/exception03")
+    public void exception03() {
+        logger.info("[exception03]");
+        throw new ServiceException(ServiceExceptionEnum.USER_NOT_FOUND);
+    }
 }

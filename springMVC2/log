@@ -1,0 +1,19 @@
+2021-08-17 16:09:30.864  INFO 98172 --- [restartedMain] c.e.springmvc2.SpringMvc2Application     : Starting SpringMvc2Application using Java 11.0.11 on roczhang with PID 98172 (/home/roczhang/code/springboot-demos/springMVC2/target/classes started by roczhang in /home/roczhang/code/springboot-demos/springMVC2)
+2021-08-17 16:09:30.867  INFO 98172 --- [restartedMain] c.e.springmvc2.SpringMvc2Application     : No active profile set, falling back to default profiles: default
+2021-08-17 16:09:30.959  INFO 98172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-17 16:09:30.960  INFO 98172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-17 16:09:31.960  INFO 98172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-17 16:09:31.968  INFO 98172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-17 16:09:31.969  INFO 98172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-17 16:09:32.015  INFO 98172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-17 16:09:32.015  INFO 98172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
+2021-08-17 16:09:32.275  WARN 98172 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-17 16:09:32.321  INFO 98172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-17 16:09:32.346  INFO 98172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-17 16:09:32.359  INFO 98172 --- [restartedMain] c.e.springmvc2.SpringMvc2Application     : Started SpringMvc2Application in 1.978 seconds (JVM running for 2.843)
+2021-08-17 16:10:46.098  INFO 98172 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-17 16:10:46.099  INFO 98172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-17 16:10:46.100  INFO 98172 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-17 16:10:46.111  INFO 98172 --- [http-nio-8080-exec-2] c.e.s.core.interceptor.FirstInterceptor  : [preHandle]
+2021-08-17 16:10:46.112  INFO 98172 --- [http-nio-8080-exec-2] c.e.s.c.interceptor.SecondInterceptor    : [preHandle]
+2021-08-17 16:10:46.112  INFO 98172 --- [http-nio-8080-exec-2] c.e.s.core.interceptor.FirstInterceptor  : [afterCompletion]

@@ -10,11 +10,16 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
+    @GetMapping("/index")
+    public String index() {
+        return "llll";
+    }
+
     @GetMapping("")
    public List<UserVO> list() {
         List<UserVO> result = new ArrayList<>();
         result.add(new UserVO(1, "roczhang"));
-        result.add(new UserVO(2, "dlage"));
+//        result.add(new UserVO(2, "dlage"));
         result.add(new UserVO(3, "cccc"));
         return result;
     }

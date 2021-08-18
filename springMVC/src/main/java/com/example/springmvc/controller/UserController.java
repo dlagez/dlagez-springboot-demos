@@ -12,7 +12,7 @@ public class UserController {
 
     @GetMapping("/index")
     public String index() {
-        return "llll";
+        return "dddd";
     }
 
     @GetMapping("")

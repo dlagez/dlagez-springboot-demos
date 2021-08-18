@@ -1,0 +1,275 @@
+2021-08-18 15:45:36.875  INFO 136499 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 136499 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 15:45:36.897  INFO 136499 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 15:45:38.107  INFO 136499 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 15:45:38.115  INFO 136499 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 15:45:38.116  INFO 136499 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 15:45:38.164  INFO 136499 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 15:45:38.164  INFO 136499 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1120 ms
+2021-08-18 15:45:38.475  INFO 136499 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 15:45:38.485  INFO 136499 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.164 seconds (JVM running for 3.207)
+2021-08-18 15:46:16.215  INFO 136499 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 15:46:16.217  INFO 136499 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 15:46:16.217  INFO 136499 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-18 15:46:16.259 ERROR 136499 --- [http-nio-8080-exec-1] o.a.coyote.http11.Http11NioProtocol      : Error reading request, ignored
+
+java.lang.NullPointerException: null
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:62) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:48) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:135) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:940) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-08-18 15:49:41.503 ERROR 136499 --- [http-nio-8080-exec-2] o.a.coyote.http11.Http11NioProtocol      : Error reading request, ignored
+
+java.lang.NullPointerException: null
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:62) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:48) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:135) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:940) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-08-18 15:51:21.611  INFO 137204 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 137204 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 15:51:21.613  INFO 137204 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 15:51:22.935  INFO 137204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 15:51:22.942  INFO 137204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 15:51:22.942  INFO 137204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 15:51:22.988  INFO 137204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 15:51:22.989  INFO 137204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
+2021-08-18 15:51:23.272  INFO 137204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 15:51:23.282  INFO 137204 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.34 seconds (JVM running for 3.387)
+2021-08-18 15:51:43.796  INFO 137204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 15:51:43.797  INFO 137204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 15:51:43.797  INFO 137204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-18 15:51:43.829  INFO 137204 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@10c6df28) 接入]
+2021-08-18 15:52:03.415  INFO 137204 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@10c6df28) 接收到一条消息(1)]
+2021-08-18 15:52:19.450  INFO 137204 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@10c6df28) 接收到一条消息(nihao)]
+2021-08-18 15:53:26.391  INFO 137204 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@10c6df28) 接收到一条消息(kakaka
+)]
+2021-08-18 18:51:34.858  INFO 137204 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@10c6df28) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 18:53:38.942  INFO 139822 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 139822 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 18:53:38.945  INFO 139822 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 18:53:39.842  INFO 139822 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 18:53:39.849  INFO 139822 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 18:53:39.849  INFO 139822 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 18:53:39.905  INFO 139822 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 18:53:39.905  INFO 139822 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2021-08-18 18:53:39.956  INFO 139822 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 18:53:40.254  INFO 139822 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 18:53:40.268  INFO 139822 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 1.869 seconds (JVM running for 2.523)
+2021-08-18 18:54:13.602  INFO 139822 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 18:54:13.603  INFO 139822 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 18:54:13.604  INFO 139822 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-18 18:54:13.636  INFO 139822 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接入]
+2021-08-18 18:56:12.734  INFO 139822 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接收到一条消息(hello
+)]
+2021-08-18 18:57:48.570  INFO 139822 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接收到一条消息(hello
+)]
+2021-08-18 18:58:25.437  INFO 139822 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@383121f8) 接入]
+2021-08-18 18:58:46.470  INFO 139822 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@383121f8) 接收到一条消息(nihao)]
+2021-08-18 18:59:48.596  INFO 139822 --- [http-nio-8080-exec-7] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接收到一条消息(PING)]
+2021-08-18 18:59:49.595  INFO 139822 --- [http-nio-8080-exec-6] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接收到一条消息(PING)]
+2021-08-18 18:59:50.595  INFO 139822 --- [http-nio-8080-exec-8] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@25e4274c) 接收到一条消息(PING)]
+2021-08-18 19:57:01.176  INFO 139822 --- [http-nio-8080-exec-9] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@25e4274c) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]
+2021-08-18 21:00:37.965  INFO 139822 --- [http-nio-8080-exec-10] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@383121f8) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]
+2021-08-18 21:06:27.501  INFO 139822 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@18441922) 接入]
+2021-08-18 21:10:54.552  INFO 139822 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@566c8cc4) 接入]
+2021-08-18 21:15:21.719  INFO 139822 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@18441922) 链接关闭。关闭原因是(CloseReason: code [1000], reason [Active closure of the user])]
+2021-08-18 21:15:25.160  INFO 139822 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@566c8cc4) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]
+2021-08-18 21:15:53.211  INFO 139822 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@1ac4b00) 接入]
+2021-08-18 21:15:57.560  INFO 139822 --- [http-nio-8080-exec-7] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@6efd8b31) 接入]
+2021-08-18 21:16:22.073  INFO 139822 --- [http-nio-8080-exec-6] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@6efd8b31) 链接关闭。关闭原因是(CloseReason: code [1000], reason [Active closure of the user])]
+2021-08-18 21:16:24.059  INFO 139822 --- [http-nio-8080-exec-8] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@1ac4b00) 链接关闭。关闭原因是(CloseReason: code [1000], reason [Active closure of the user])]
+2021-08-18 21:16:34.481  INFO 139822 --- [http-nio-8080-exec-9] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@36a7d4ac) 接入]
+2021-08-18 21:16:38.396  INFO 139822 --- [http-nio-8080-exec-10] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@7e9adc5a) 接入]
+2021-08-18 21:17:18.457  INFO 139822 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@7e9adc5a) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:17:18.463  INFO 139822 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@36a7d4ac) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:17:21.783  INFO 142528 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 142528 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:17:21.799  INFO 142528 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:17:23.076  INFO 142528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:17:23.083  INFO 142528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:17:23.084  INFO 142528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:17:23.132  INFO 142528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:17:23.133  INFO 142528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1080 ms
+2021-08-18 21:17:23.179  INFO 142528 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:17:23.430  INFO 142528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:17:23.442  INFO 142528 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.472 seconds (JVM running for 3.249)
+2021-08-18 21:17:31.138  INFO 142528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 21:17:31.139  INFO 142528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 21:17:31.141  INFO 142528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-18 21:17:31.173  INFO 142528 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@3de1dcec) 接入]
+2021-08-18 21:17:51.538  INFO 142528 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@44439959) 接入]
+2021-08-18 21:18:48.272  INFO 142528 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@383121f8) 接入]
+2021-08-18 21:21:18.600  INFO 142528 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@1ac4b00) 接入]
+2021-08-18 21:21:32.128  INFO 142528 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@383121f8) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:21:32.130  INFO 142528 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@44439959) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:21:32.133  INFO 142528 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@1ac4b00) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:21:32.138  INFO 142528 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3de1dcec) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:21:43.619  INFO 143014 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 143014 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:21:43.623  INFO 143014 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:21:44.397  INFO 143014 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:21:44.404  INFO 143014 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:21:44.405  INFO 143014 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:21:44.455  INFO 143014 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:21:44.455  INFO 143014 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2021-08-18 21:21:44.511  INFO 143014 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:21:44.843  INFO 143014 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:21:44.857  INFO 143014 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 1.675 seconds (JVM running for 3.762)
+2021-08-18 21:21:52.620  INFO 143014 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 21:21:52.620  INFO 143014 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 21:21:52.621  INFO 143014 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-18 21:21:52.667  INFO 143014 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@6c02a6ac) 接入]
+2021-08-18 21:22:14.623  INFO 143014 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@320a79f2) 接入]
+2021-08-18 21:23:14.070  INFO 143014 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@320a79f2) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:23:14.072  INFO 143014 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@6c02a6ac) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:23:19.553  INFO 143226 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 143226 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:23:19.555  INFO 143226 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:23:20.793  INFO 143226 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:23:20.800  INFO 143226 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:23:20.801  INFO 143226 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:23:20.847  INFO 143226 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:23:20.847  INFO 143226 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2021-08-18 21:23:20.892  INFO 143226 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:23:21.145  INFO 143226 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:23:21.155  INFO 143226 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.376 seconds (JVM running for 3.166)
+2021-08-18 21:23:32.005  INFO 143226 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 21:23:32.006  INFO 143226 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 21:23:32.007  INFO 143226 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-18 21:23:32.036  INFO 143226 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@ce26d13) 接入]
+2021-08-18 21:23:52.336  INFO 143226 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@1eb4ce44) 接入]
+2021-08-18 21:24:23.011  INFO 143226 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@3da47814) 接入]
+2021-08-18 21:24:28.048  INFO 143226 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@1eb4ce44) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:24:28.049  INFO 143226 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3da47814) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:24:28.051  INFO 143226 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@ce26d13) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:24:32.154  INFO 143556 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 143556 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:24:32.156  INFO 143556 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:24:33.087  INFO 143556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:24:33.093  INFO 143556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:24:33.094  INFO 143556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:24:33.137  INFO 143556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:24:33.137  INFO 143556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 933 ms
+2021-08-18 21:24:33.180  INFO 143556 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:24:33.426  INFO 143556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:24:33.441  INFO 143556 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 1.9 seconds (JVM running for 2.792)
+2021-08-18 21:24:51.297  INFO 143556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 21:24:51.297  INFO 143556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 21:24:51.298  INFO 143556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-18 21:24:51.331  INFO 143556 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@3a74cdff) 接入]
+2021-08-18 21:25:19.792  INFO 143556 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@32d90c0) 接入]
+2021-08-18 21:35:12.635  INFO 143556 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3a74cdff) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:35:12.637  INFO 143556 --- [SpringApplicationShutdownHook] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@32d90c0) 链接关闭。关闭原因是(CloseReason: code [1001], reason [The web application is stopping])]
+2021-08-18 21:35:21.824  INFO 144886 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 144886 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:35:21.827  INFO 144886 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:35:22.947  INFO 144886 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:35:22.955  INFO 144886 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:35:22.956  INFO 144886 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:35:23.011  INFO 144886 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:35:23.011  INFO 144886 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1112 ms
+2021-08-18 21:35:23.059  INFO 144886 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:35:23.378  INFO 144886 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:35:23.391  INFO 144886 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.301 seconds (JVM running for 3.382)
+2021-08-18 21:38:46.579  INFO 145943 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 145943 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:38:46.581  INFO 145943 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:38:47.597  INFO 145943 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:38:47.604  INFO 145943 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:38:47.604  INFO 145943 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:38:47.649  INFO 145943 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:38:47.649  INFO 145943 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2021-08-18 21:38:47.689  INFO 145943 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:38:47.930  INFO 145943 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:38:47.940  INFO 145943 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 1.876 seconds (JVM running for 2.615)
+2021-08-18 21:39:21.711  INFO 145943 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 21:39:21.712  INFO 145943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 21:39:21.714  INFO 145943 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-18 21:39:21.750  INFO 145943 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@26ea05b6) 接入]
+2021-08-18 21:39:22.882  INFO 145943 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@445b3fbb) 接入]
+2021-08-18 21:40:06.981  INFO 145943 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@445b3fbb) 链接关闭。关闭原因是(CloseReason: code [1000], reason [Active closure of the user])]
+2021-08-18 21:40:08.258  INFO 145943 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@3436c468) 接入]
+2021-08-18 21:40:08.275  INFO 145943 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3436c468) 发生异常]
+
+java.lang.IllegalStateException: The WebSocket session [1] has been closed and no method (apart from close()) may be called on a closed session
+	at org.apache.tomcat.websocket.WsSession.checkState(WsSession.java:1074) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.WsSession.getBasicRemote(WsSession.java:640) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at com.example.websocketsdemo.util.WebSocketUtil.sendTextMessage(WebSocketUtil.java:131) ~[classes/:na]
+	at com.example.websocketsdemo.util.WebSocketUtil.broadcast(WebSocketUtil.java:71) ~[classes/:na]
+	at com.example.websocketsdemo.handler.AuthMessageHandler.execute(AuthMessageHandler.java:31) ~[classes/:na]
+	at com.example.websocketsdemo.handler.AuthMessageHandler.execute(AuthMessageHandler.java:12) ~[classes/:na]
+	at com.example.websocketsdemo.websocket.WebsocketServerEndpoint.onOpen(WebsocketServerEndpoint.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:69) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:48) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:135) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:940) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-08-18 21:40:08.285  INFO 145943 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3436c468) 链接关闭。关闭原因是(CloseReason: code [1000], reason [])]
+2021-08-18 21:40:22.859  INFO 145943 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@4803e5f7) 接入]
+2021-08-18 21:40:22.861  INFO 145943 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@4803e5f7) 发生异常]
+
+java.lang.IllegalStateException: The WebSocket session [1] has been closed and no method (apart from close()) may be called on a closed session
+	at org.apache.tomcat.websocket.WsSession.checkState(WsSession.java:1074) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.WsSession.getBasicRemote(WsSession.java:640) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at com.example.websocketsdemo.util.WebSocketUtil.sendTextMessage(WebSocketUtil.java:131) ~[classes/:na]
+	at com.example.websocketsdemo.util.WebSocketUtil.broadcast(WebSocketUtil.java:71) ~[classes/:na]
+	at com.example.websocketsdemo.handler.AuthMessageHandler.execute(AuthMessageHandler.java:31) ~[classes/:na]
+	at com.example.websocketsdemo.handler.AuthMessageHandler.execute(AuthMessageHandler.java:12) ~[classes/:na]
+	at com.example.websocketsdemo.websocket.WebsocketServerEndpoint.onOpen(WebsocketServerEndpoint.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:69) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:48) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:135) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:940) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2021-08-18 21:40:22.863  INFO 145943 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@4803e5f7) 链接关闭。关闭原因是(CloseReason: code [1000], reason [])]
+2021-08-18 21:40:51.205  INFO 145943 --- [http-nio-8080-exec-6] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@26ea05b6) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]
+2021-08-18 21:41:07.462  INFO 146477 --- [main] c.e.w.WebSocketsDemoApplication          : Starting WebSocketsDemoApplication using Java 11.0.11 on roczhang with PID 146477 (/home/roczhang/code/springboot-demos/WebSockets-demo/target/classes started by roczhang in /home/roczhang/code/springboot-demos/WebSockets-demo)
+2021-08-18 21:41:07.464  INFO 146477 --- [main] c.e.w.WebSocketsDemoApplication          : No active profile set, falling back to default profiles: default
+2021-08-18 21:41:08.697  INFO 146477 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-18 21:41:08.707  INFO 146477 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-18 21:41:08.708  INFO 146477 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-18 21:41:08.791  INFO 146477 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-18 21:41:08.793  INFO 146477 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1218 ms
+2021-08-18 21:41:08.929  INFO 146477 --- [main] c.e.w.websocket.WebsocketServerEndpoint  : [afterPropertiesSet][消息处理器数量: 1]
+2021-08-18 21:41:09.274  INFO 146477 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-18 21:41:09.293  INFO 146477 --- [main] c.e.w.WebSocketsDemoApplication          : Started WebSocketsDemoApplication in 2.499 seconds (JVM running for 3.444)
+2021-08-18 22:16:11.906  INFO 146477 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-18 22:16:11.907  INFO 146477 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-18 22:16:11.910  INFO 146477 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-18 22:16:11.950  INFO 146477 --- [http-nio-8080-exec-1] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@3fe6e24) 接入]
+2021-08-18 22:16:22.873  INFO 146477 --- [http-nio-8080-exec-2] c.e.w.websocket.WebsocketServerEndpoint  : [onOpen][session(org.apache.tomcat.websocket.WsSession@5cca56b9) 接入]
+2021-08-18 22:17:25.509  INFO 146477 --- [http-nio-8080-exec-3] c.e.w.websocket.WebsocketServerEndpoint  : [onMessage][session(org.apache.tomcat.websocket.WsSession@3fe6e24) 接收到一条消息({
+    type: "SEND_TO_ONE_REQUEST",
+    body: {
+        toUser: "dlage",
+        msgId: "eaef4a3c-35dd-46ee-b548-f9c4eb6396fe",
+        content: "我是一条单聊消息"
+    }
+})]
+2021-08-18 22:21:18.057  INFO 146477 --- [http-nio-8080-exec-5] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@3fe6e24) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]
+2021-08-18 22:21:18.601  INFO 146477 --- [http-nio-8080-exec-4] c.e.w.websocket.WebsocketServerEndpoint  : [onClose][session(org.apache.tomcat.websocket.WsSession@5cca56b9) 链接关闭。关闭原因是(CloseReason: code [1001], reason [null])]

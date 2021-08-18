@@ -1,0 +1,13 @@
+spring:
+  # datasource ???????
+  datasource:
+    url: jdbc:mysql:///test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+
+# mybatis ????
+mybatis:
+  config-location: classpath:mybatis-config.xml # ?? MyBatis ??????
+  mapper-locations: classpath:mapper/*.xml # ?? Mapper XML ??
+  type-aliases-package: com.example.mybatisxml.dataobject # ??????????

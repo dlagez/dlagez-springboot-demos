@@ -12,4 +12,47 @@
             #{username}, #{password}, #{createTime}
         )
     </insert>
+
+    <update id="updateById" parameterType="UserDo">
+        UPDATE users
+        <set>
+            <if test="username != null">
+                , username = #{username}
+            </if>
+            <if test="password != null">
+                , password = #{password}
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Integer">
+        DELETE FROM users
+        WHERE id = #{id}
+    </delete>
+
+    <select id="selectById" parameterType="Integer" resultType="UserDo">
+        SELECT
+            <include refid="FIELDS"/>
+        FROM users
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectByUsername" parameterType="String" resultType="UserDo">
+        SELECT
+        <include refid="FIELDS" />
+        FROM users
+        WHERE username = #{username}
+        LIMIT 1
+    </select>
+
+    <select id="selectByIds" resultType="UserDO">
+        SELECT
+        <include refid="FIELDS" />
+        FROM users
+        WHERE id IN
+        <foreach item="id" collection="ids" separator="," open="(" close=")" index="">
+            #{id}
+        </foreach>
+    </select>
 </mapper>

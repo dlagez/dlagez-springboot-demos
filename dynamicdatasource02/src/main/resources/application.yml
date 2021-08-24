@@ -1,28 +1,28 @@
 spring:
   datasource:
     dynamic:
-      primary:
+      primary: master
       datasource:
         # ??
         master:
-          url: jdbc:mysql///test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          url: jdbc:mysql:///test_orders?useSSL=false&useUnicode=true&characterEncoding=UTF-8
           driver-class-name: com.mysql.cj.jdbc.Driver
           username: root
           password: password
 
         # ??
         slave_1:
-          url: jdbc:mysql///test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
-            driver-class-name: com.mysql.cj.jdbc.Driver
-            username: root
-            password: password
+          url: jdbc:mysql:///test_orders_01?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: password
 
         # ??
         slave_2:
-          url: jdbc:mysql///test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
-            driver-class-name: com.mysql.cj.jdbc.Driver
-            username: root
-            password: password
+          url: jdbc:mysql:///test_orders_02?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: password
 
 # mybatis ????
 mybatis:

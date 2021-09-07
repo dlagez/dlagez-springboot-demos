@@ -1,6 +1,6 @@
 package com.example.mybatis.controller;
 
-import com.example.mybatis.mapper.UserMapper;
+import com.example.mybatis.mapper.TestUserMapper;
 import com.example.mybatis.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,11 +12,11 @@ import java.util.List;
 public class IndexController {
 
     @Autowired
-    private UserMapper userMapper;
+    private TestUserMapper testUserMapper;
 
     @GetMapping("selectAll")
     public String selectAll() {
-        List<User> users = userMapper.selectAll();
+        List<User> users = testUserMapper.selectAll();
         for (User user : users) {
             System.out.println(user.toString());
         }

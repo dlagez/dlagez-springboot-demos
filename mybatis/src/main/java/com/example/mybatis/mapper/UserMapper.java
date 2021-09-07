@@ -1,12 +1,20 @@
 package com.example.mybatis.mapper;
 
-import com.example.mybatis.pojo.User;
+import com.example.mybatis.pojo.SysRole;
+import com.example.mybatis.pojo.SysUser;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Repository
 public interface UserMapper {
-    List<User> selectAll();
+    // select 方法
+    SysUser selectById(Long id);
+    List<SysUser> selectAll();
+
+    List<SysRole> selectRolesByUserId(Long userId);
+
+    // insert方法
+    int insert(SysUser sysUser);
+
 }

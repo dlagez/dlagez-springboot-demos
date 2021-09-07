@@ -51,4 +51,42 @@ public class UserController {
         }
     }
 
+    @GetMapping("/testUser5")
+    public void test5() {
+        SysUser sysUser = new SysUser(null, "roczhang", "password", "fdasf",
+                "dddd", new byte[123], new Date());
+        int success = userMapper.insert(sysUser);
+        if (success == 1) {
+            System.out.println("insert success!");
+        }
+    }
+
+    // test user update
+    @GetMapping("/testUser6")
+    public void test6() {
+        SysUser sysUser = new SysUser(1002L, "roczhang2", "password", "fdasf",
+                "dddd", new byte[123], new Date());
+        int success = userMapper.updateById(sysUser);
+        if (success == 1) {
+            System.out.println("update success!");
+        }
+    }
+
+    // test user delete
+    @GetMapping("/testUser7")
+    public void test7() {
+        int i = userMapper.deleteById(1002L);
+        System.out.println(i);
+    }
+
+    // 测试多个参数
+    @GetMapping("/testUser8")
+    public void test8() {
+        List<SysRole> sysRoles = userMapper.selectRolesByUserIdAndRoleEnabled(1L, 1);
+        for (SysRole sysRole : sysRoles) {
+            System.out.printf(sysRole.toString());
+        }
+    }
+
+
 }

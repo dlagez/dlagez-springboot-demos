@@ -16,5 +16,13 @@ public interface UserMapper {
 
     // insert方法
     int insert(SysUser sysUser);
+    int insert2(SysUser sysUser);
 
+    // update方法
+    int updateById(SysUser sysUser);
+
+    //delete方法
+    int deleteById(Long id);
+
+    List<SysRole> selectRolesByUserIdAndRoleEnabled(Long userId, Integer enabled);
 }

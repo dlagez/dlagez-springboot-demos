@@ -5,6 +5,7 @@ import com.example.mybatis.pojo.SysUser;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public interface UserMapper {
@@ -25,4 +26,19 @@ public interface UserMapper {
     int deleteById(Long id);
 
     List<SysRole> selectRolesByUserIdAndRoleEnabled(Long userId, Integer enabled);
+
+    // 动态sql
+    List<SysUser> selectByUser(SysUser sysUser);
+
+    int updateByIdSelective(SysUser sysUser);
+
+    SysUser selectByIdOrUserName(SysUser sysUser);
+
+    List<SysUser> selectByIdList(List<Long> idList);
+
+    // 批量插入User
+    int insertList(List<SysUser> userList);
+
+    // foreach实现动态更新
+    int updateByMap(Map<String, Object> map);
 }
